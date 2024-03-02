@@ -1,0 +1,297 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    
+}
+/* css variables */
+
+:root{
+    --navheight: 60px
+   
+}
+/* navigation bar */
+
+html{
+    scroll-behavior: smooth;
+}
+
+#navbar{
+    display: flex;
+    /* border: solid; */
+    align-items: center;
+    position: sticky;
+    top: 0;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Staatliches', cursive;
+}
+
+#navbar::before{
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+/* navbar logo and img */
+
+
+
+img{
+    width: 70px;
+    margin: 5px;
+    
+}
+
+/* navbar list style */
+
+ul{
+
+    display: flex;
+}
+.item{
+    list-style: none;
+    margin: 20px;
+    font-size: 25px;
+    
+}
+
+li a{
+    text-decoration: none;
+    color:honeydew;
+
+}
+
+
+
+li a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    transition: all 0.5s;
+    
+}
+
+/* home-section */
+#home{
+    /* border: solid black; */
+    font-family: 'Anton', sans-serif;
+    font-family: 'Staatliches', cursive;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    padding: 5px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    /* border: solid; */
+    height: 326px;
+}
+#home::before{
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.89;
+    background: url('images/bgimage1.jpg') no-repeat center center/cover;
+
+}
+#home h1{
+    text-align: center;
+    color: white;
+}
+
+#home p{
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    padding: 20px;
+
+}
+/* services section */
+
+#service-con{
+    border: solid black;
+}
+
+#services{
+    display: flex;
+    margin: 30px;
+    /* border: solid; */
+}
+#services .box{
+    /* border: solid; */
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px gray;
+    background-color: rgb(234, 228, 228);
+}
+
+#services .box:hover{
+    transform: scale(1.05);
+    transition: 0.8s;
+}
+
+#services .box img{
+    width: 250px;
+
+}
+
+.box p{
+   font-size: 20px;
+   font-family: 'Anton', sans-serif;
+   font-family: 'Staatliches', cursive;
+   font-family: 'Vidaloka', serif;
+}
+
+/* client section */
+
+#client{
+    margin: 115px;
+    margin-top: 35px;
+    
+    
+}
+
+
+#client-con{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -15px;
+    height: 300px;
+   
+   
+}
+
+#client-con::before{
+    content: "";
+    position: absolute;
+    background: url('images/bg2.jpg') no-repeat center center/ cover;
+    width: 100%;
+    height: 500px;
+    z-index: -1;
+    opacity: 0.6;
+   }
+
+
+
+
+
+#client-con .box{
+    padding: 0px;
+    
+}
+
+#client-con .box:hover{
+    transform: scale(1.09);
+    transition: 0.5s;
+}
+
+.box img{
+    width: 170px;
+    margin: 55px;
+}
+
+/* Contact section */
+
+#contact{
+    position: relative;
+    
+    
+}
+
+#contact::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 540px;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+    background: url('images/businessman-shows-outstretched-hand-with-social-icon-on-virtual-screen-contact-us-free-photo.jpg') no-repeat center center/ cover;
+}
+
+#contact-box{
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Staatliches', cursive;
+    font-family: 'Vidaloka', serif;
+    font-size: 20px;
+    
+    
+}
+
+
+#contact-box input,
+#contact-box textarea{
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    box-shadow: 7px 7px 25px rgb(0, 0, 0);
+    width: 100%;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Staatliches', cursive;
+}
+
+/* footer */
+
+footer{
+    background-color: black;
+    color: aliceblue;
+}
+
+/* Utility classes */
+.h-primary{
+    font-size: 3rem;
+    padding: 12px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Staatliches', cursive;
+}
+
+.h-sec{
+    padding: 12px;
+    font-size: 1.5rem;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Staatliches', cursive;
+}
+.btn{
+    padding: 6px;
+    border: white solid;
+    color: aliceblue;
+    background-color: brown;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Staatliches', cursive;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 25px;
+}
+.btn:hover{
+    background-color: chocolate;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.center{
+    text-align: center;
+}
