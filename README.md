@@ -11,7 +11,7 @@ The website adjusts its layout based on the user's device, providing an optimal 
 **Restaurant Listings:** 
 Browse through a directory of restaurants with details like cuisine type, ratings, and delivery information.
 
-**Smooth Scroll**
+**Smooth Scroll:**
 Smooth scrolling feature.
 
 # Tech Stack (Example):
